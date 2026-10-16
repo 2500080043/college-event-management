@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>CampusEvents</h1>
+    <nav><a href="index.html">Home</a><a href="user.html">Student Portal</a><a href="admin.html">Admin Portal</a></nav>
+  </header>
+
+  <main class="page">
+    <h2>Administrator Portal</h2>
+    <p>Add and manage college events.</p>
+
+    <form id="eventForm" class="form-card">
+      <input id="eventName" type="text" placeholder="Event name" required>
+      <input id="eventDate" type="date" required>
+      <input id="eventVenue" type="text" placeholder="Venue" required>
+      <button class="btn" type="submit">Add Event</button>
+    </form>
+
+    <div id="adminEventList" class="event-grid"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
